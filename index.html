@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه Master DNS WireGuard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">Master DNS</h1>
+                        <p class="text-sm opacity-90">خدمات WireGuard امن و سریع</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition-all">
+                        سبد خرید (0)
+                    </button>
+                    <button class="bg-white text-purple-600 hover:bg-gray-100 px-6 py-2 rounded-lg font-medium transition-all">
+                        ورود / ثبت نام
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">اتصال امن و سریع با WireGuard</h2>
+            <p class="text-xl mb-8 opacity-90">بهترین سرویس DNS و VPN برای حفاظت از حریم خصوصی شما</p>
+            <div class="flex justify-center space-x-4 space-x-reverse">
+                <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                    <div class="text-2xl font-bold">99.9%</div>
+                    <div class="text-sm">آپتایم</div>
+                </div>
+                <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                    <div class="text-2xl font-bold">24/7</div>
+                    <div class="text-sm">پشتیبانی</div>
+                </div>
+                <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                    <div class="text-2xl font-bold">50+</div>
+                    <div class="text-sm">سرور</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">پکیج‌های Master DNS WireGuard</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-xl shadow-lg card-hover p-8 border-2 border-gray-100">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🚀</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-2">پایه</h4>
+                        <div class="text-4xl font-bold text-blue-600 mb-4">
+                            ۱۵۰,۰۰۰
+                            <span class="text-lg text-gray-500">تومان/ماه</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            ۱ دستگاه همزمان
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            ترافیک نامحدود
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            DNS امن
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            پشتیبانی ایمیل
+                        </li>
+                    </ul>
+                    
+                    <button onclick="addToCart('basic')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium transition-all">
+                        افزودن به سبد خرید
+                    </button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-white rounded-xl shadow-lg card-hover p-8 border-2 border-purple-500 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-purple-500 text-white px-4 py-1 rounded-full text-sm pulse-animation">محبوب</span>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">⭐</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-2">حرفه‌ای</h4>
+                        <div class="text-4xl font-bold text-purple-600 mb-4">
+                            ۲۵۰,۰۰۰
+                            <span class="text-lg text-gray-500">تومان/ماه</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            ۵ دستگاه همزمان
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            ترافیک نامحدود
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            DNS امن + Ad Block
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            پشتیبانی ۲۴/۷
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            سرورهای پریمیوم
+                        </li>
+                    </ul>
+                    
+                    <button onclick="addToCart('pro')" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-medium transition-all">
+                        افزودن به سبد خرید
+                    </button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-white rounded-xl shadow-lg card-hover p-8 border-2 border-gray-100">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #fef3c7;">
+                            <span class="text-2xl">👑</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-2">سازمانی</h4>
+                        <div class="text-4xl font-bold text-yellow-600 mb-4">
+                            ۵۰۰,۰۰۰
+                            <span class="text-lg text-gray-500">تومان/ماه</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            ۱۰ دستگاه همزمان
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            ترافیک نامحدود
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            DNS امن + Ad Block + Malware Protection
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            پشتیبانی اولویت دار
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 ml-2">✓</span>
+                            IP اختصاصی
+                        </li>
+                    </ul>
+                    
+                    <button onclick="addToCart('enterprise')" class="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3 rounded-lg font-medium transition-all">
+                        افزودن به سبد خرید
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vitory Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-gray-800">درباره Master DNS</h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Master DNS یکی از پیشروترین شرکت‌های ارائه‌دهنده خدمات امنیت شبکه و حریم خصوصی آنلاین است. 
+                        ما با بیش از ۵ سال تجربه در زمینه فناوری‌های VPN و DNS، خدماتی امن، سریع و قابل اعتماد ارائه می‌دهیم.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center p-4 bg-blue-50 rounded-lg">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">۵+</div>
+                            <div class="text-sm text-gray-600">سال تجربه</div>
+                        </div>
+                        <div class="text-center p-4 bg-green-50 rounded-lg">
+                            <div class="text-3xl font-bold text-green-600 mb-2">۱۰۰K+</div>
+                            <div class="text-sm text-gray-600">کاربر فعال</div>
+                        </div>
+                        <div class="text-center p-4 bg-purple-50 rounded-lg">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">۵۰+</div>
+                            <div class="text-sm text-gray-600">سرور جهانی</div>
+                        </div>
+                        <div class="text-center p-4 bg-yellow-50 rounded-lg">
+                            <div class="text-3xl font-bold text-yellow-600 mb-2">۲۴/۷</div>
+                            <div class="text-sm text-gray-600">پشتیبانی</div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="text-green-500 ml-3 text-xl">✓</span>
+                            <span class="text-gray-700">تیم متخصص و با تجربه</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-green-500 ml-3 text-xl">✓</span>
+                            <span class="text-gray-700">زیرساخت قدرتمند و مقیاس‌پذیر</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-green-500 ml-3 text-xl">✓</span>
+                            <span class="text-gray-700">تعهد به حفظ حریم خصوصی کاربران</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-green-500 ml-3 text-xl">✓</span>
+                            <span class="text-gray-700">به‌روزرسانی مداوم و بهبود خدمات</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
+                        <div class="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-4xl">🏢</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">ماموریت ما</h4>
+                        <p class="text-lg opacity-90 mb-6">
+                            ایجاد اینترنتی امن‌تر و آزادتر برای همه کاربران با ارائه بهترین خدمات DNS و VPN
+                        </p>
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold">امنیت</div>
+                                <div class="text-sm opacity-75">اولویت اول</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold">سرعت</div>
+                                <div class="text-sm opacity-75">بدون محدودیت</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold">پشتیبانی</div>
+                                <div class="text-sm opacity-75">همیشه در دسترس</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DNS Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold mb-4 text-gray-800">خدمات DNS پیشرفته</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    سیستم نام دامنه (DNS) ما با فناوری‌های پیشرفته، سرعت و امنیت بالایی را برای تجربه اینترنت شما فراهم می‌کند
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <span class="text-3xl">🌐</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-gray-800">DNS امن و سریع</h4>
+                        <p class="text-gray-600 mb-6">
+                            سرورهای DNS ما با استفاده از پروتکل‌های امنیتی مدرن مانند DNS-over-HTTPS و DNS-over-TLS، 
+                            درخواست‌های شما را به صورت رمزگذاری شده پردازش می‌کنند.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center p-3 bg-green-50 rounded-lg">
+                                <span class="text-green-500 ml-3">🔒</span>
+                                <div>
+                                    <div class="font-medium">رمزگذاری کامل</div>
+                                    <div class="text-sm text-gray-600">محافظت از درخواست‌های DNS</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-3 bg-blue-50 rounded-lg">
+                                <span class="text-blue-500 ml-3">⚡</span>
+                                <div>
+                                    <div class="font-medium">پاسخ‌دهی سریع</div>
+                                    <div class="text-sm text-gray-600">کمتر از ۱۰ میلی‌ثانیه تاخیر</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-3 bg-purple-50 rounded-lg">
+                                <span class="text-purple-500 ml-3">🛡️</span>
+                                <div>
+                                    <div class="font-medium">فیلتر هوشمند</div>
+                                    <div class="text-sm text-gray-600">مسدودسازی تبلیغات و بدافزار</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center ml-4">
+                                <span class="text-xl">🚫</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg">مسدودسازی تبلیغات</h5>
+                                <p class="text-sm text-gray-600">حذف خودکار تبلیغات مزاحم</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            سیستم فیلتر پیشرفته ما میلیون‌ها دامنه تبلیغاتی را شناسایی و مسدود می‌کند
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center ml-4">
+                                <span class="text-xl">🦠</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg">محافظت از بدافزار</h5>
+                                <p class="text-sm text-gray-600">شناسایی و مسدودسازی سایت‌های مخرب</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            پایگاه داده به‌روز از تهدیدات امنیتی برای محافظت از دستگاه‌های شما
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center ml-4">
+                                <span class="text-xl">👨‍👩‍👧‍👦</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg">کنترل والدین</h5>
+                                <p class="text-sm text-gray-600">فیلتر محتوای نامناسب برای کودکان</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            ابزارهای قدرتمند برای کنترل و محدودسازی دسترسی به محتوای نامناسب
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- DNS Performance Stats -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <h4 class="text-2xl font-bold text-center mb-8 text-gray-800">عملکرد DNS ما</h4>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">📊</span>
+                        </div>
+                        <div class="text-3xl font-bold text-blue-600 mb-2">۹۹.۹%</div>
+                        <div class="text-gray-600">آپتایم</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">⚡</span>
+                        </div>
+                        <div class="text-3xl font-bold text-green-600 mb-2">&lt;۱۰ms</div>
+                        <div class="text-gray-600">زمان پاسخ</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🌍</span>
+                        </div>
+                        <div class="text-3xl font-bold text-purple-600 mb-2">۵۰+</div>
+                        <div class="text-gray-600">مرکز داده</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🛡️</span>
+                        </div>
+                        <div class="text-3xl font-bold text-red-600 mb-2">۱M+</div>
+                        <div class="text-gray-600">تهدید مسدود شده</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">چرا Master DNS؟</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🔒</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">امنیت بالا</h4>
+                    <p class="text-gray-600">رمزگذاری قوی و محافظت از داده‌های شما</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">سرعت بالا</h4>
+                    <p class="text-gray-600">اتصال سریع و پایدار با کمترین تاخیر</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">سرورهای جهانی</h4>
+                    <p class="text-gray-600">دسترسی به بیش از ۵۰ سرور در سراسر جهان</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🛠️</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">نصب آسان</h4>
+                    <p class="text-gray-600">راه‌اندازی در کمتر از ۵ دقیقه</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl max-w-md w-full p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-bold">سبد خرید</h3>
+                    <button onclick="closeCart()" class="text-gray-500 hover:text-gray-700">✕</button>
+                </div>
+                
+                <div id="cartItems" class="space-y-4 mb-6">
+                    <!-- Cart items will be added here -->
+                </div>
+                
+                <div class="border-t pt-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="font-semibold">مجموع:</span>
+                        <span id="totalPrice" class="text-xl font-bold text-purple-600">۰ تومان</span>
+                    </div>
+                    
+                    <button onclick="checkout()" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-medium transition-all">
+                        تکمیل خرید
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Master DNS</h4>
+                    <p class="text-gray-400">ارائه‌دهنده خدمات DNS و WireGuard امن و قابل اعتماد</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">خدمات</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>DNS امن</li>
+                        <li>WireGuard VPN</li>
+                        <li>Ad Blocking</li>
+                        <li>Malware Protection</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">پشتیبانی</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>راهنمای نصب</li>
+                        <li>سوالات متداول</li>
+                        <li>تماس با ما</li>
+                        <li>گزارش مشکل</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">تماس</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📧 support@masterdns.com</li>
+                        <li>📱 تلگرام: @MasterDNS</li>
+                        <li>🌐 www.masterdns.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; ۲۰۲۴ Master DNS. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let cart = [];
+        let cartCount = 0;
+
+        const plans = {
+            basic: { name: 'پایه', price: 150000 },
+            pro: { name: 'حرفه‌ای', price: 250000 },
+            enterprise: { name: 'سازمانی', price: 500000 }
+        };
+
+        function addToCart(planType) {
+            const plan = plans[planType];
+            cart.push({ type: planType, name: plan.name, price: plan.price });
+            cartCount++;
+            
+            // Update cart button
+            document.querySelector('header button').textContent = `سبد خرید (${cartCount})`;
+            
+            // Show success message
+            showNotification(`${plan.name} به سبد خرید اضافه شد!`);
+            
+            // Open cart modal
+            setTimeout(() => {
+                openCart();
+            }, 1000);
+        }
+
+        function openCart() {
+            const modal = document.getElementById('cartModal');
+            const cartItems = document.getElementById('cartItems');
+            const totalPrice = document.getElementById('totalPrice');
+            
+            // Clear previous items
+            cartItems.innerHTML = '';
+            
+            let total = 0;
+            
+            cart.forEach((item, index) => {
+                total += item.price;
+                
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'flex justify-between items-center p-3 bg-gray-50 rounded-lg';
+                itemDiv.innerHTML = `
+                    <div>
+                        <div class="font-medium">${item.name}</div>
+                        <div class="text-sm text-gray-600">${item.price.toLocaleString()} تومان/ماه</div>
+                    </div>
+                    <button onclick="removeFromCart(${index})" class="text-red-500 hover:text-red-700">
+                        حذف
+                    </button>
+                `;
+                cartItems.appendChild(itemDiv);
+            });
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="text-gray-500 text-center py-4">سبد خرید خالی است</p>';
+            }
+            
+            totalPrice.textContent = `${total.toLocaleString()} تومان`;
+            modal.classList.remove('hidden');
+        }
+
+        function closeCart() {
+            document.getElementById('cartModal').classList.add('hidden');
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            cartCount--;
+            document.querySelector('header button').textContent = `سبد خرید (${cartCount})`;
+            openCart(); // Refresh cart display
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                showNotification('سبد خرید خالی است!', 'error');
+                return;
+            }
+            
+            // Simulate checkout process
+            showNotification('در حال انتقال به درگاه پرداخت...', 'success');
+            
+            setTimeout(() => {
+                alert('این یک نمونه نمایشی است. در نسخه واقعی، شما به درگاه پرداخت منتقل خواهید شد.');
+                closeCart();
+            }, 2000);
+        }
+
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `fixed top-4 right-4 z-50 px-6 py-3 rounded-lg text-white font-medium transition-all transform translate-x-full`;
+            notification.className += type === 'success' ? ' bg-green-500' : ' bg-red-500';
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full');
+            }, 100);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Add click handler for cart button
+        document.querySelector('header button').addEventListener('click', openCart);
+        
+        // Close modal when clicking outside
+        document.getElementById('cartModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCart();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9623c1d184242bcd',t:'MTc1MzAyODEyNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
